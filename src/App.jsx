@@ -534,7 +534,7 @@ transition-all
               {messages.map((message, index) => (
                 <div
                   key={index}
-                  className={`max-w-[85%] p-5 leading-relaxed rounded-3xl border ${
+                  className={`max-w-[85%] p-5 leading-relaxed whitespace-pre-line rounded-3xl border ${
                     message.role === "user"
                       ? "ml-auto rounded-tr-md bg-gradient-to-r from-orange-500 to-pink-500 border-transparent"
                       : "rounded-tl-md bg-white/5 border-white/10"
