@@ -557,7 +557,7 @@ transition-all
             </div>
 
             {/* 입력창 */}
-            <div className="p-4 border-t border-white/10">
+            <div className="p-4 border-t border-white/10 relative z-50">
 
               <div className="bg-white/5 border border-white/10 rounded-2xl px-4 py-3 flex items-center gap-3">
 
@@ -577,11 +577,12 @@ transition-all
                 />
 
                 <button
-                  onClick={sendMessage}
-                  className="bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
-                >
-                  전송
-                </button>
+  onClick={sendMessage}
+  onTouchEnd={sendMessage}
+  className="relative z-50 bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
+>
+  전송
+</button>
 
               </div>
 
