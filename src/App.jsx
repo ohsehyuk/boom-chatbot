@@ -148,11 +148,10 @@ if (!messageToSend.trim()) return;
   };
 
   return (
-    <div className="min-h-screen bg-[#050816] flex items-center justify-center overflow-hidden">
+    <div className="min-h-screen bg-[#050816] flex items-center justify-center">
 
       {/* 모바일 프레임 */}
-      <div className="w-full max-w-[390px]
-h-screen md:h-[844px] bg-black rounded-[40px] border border-white/10 overflow-hidden relative shadow-2xl">
+      <div className="w-full max-w-[390px] h-screen md:h-[844px] bg-black rounded-none md:rounded-[40px] border border-white/10 overflow-hidden relative shadow-2xl">
 
         {/* Glow */}
         <div className="absolute w-[300px] h-[300px] bg-orange-500/20 blur-[120px] rounded-full top-[-100px] left-[-100px]" />
@@ -161,7 +160,7 @@ h-screen md:h-[844px] bg-black rounded-[40px] border border-white/10 overflow-hi
 
         {/* SPLASH */}
         {screen === "splash" && (
-          <div className="relative z-10 flex flex-col items-center justify-center h-full px-8 text-white">
+          <div className="relative z-10 flex flex-col h-full text-white pointer-events-auto">
 
             <h1 className="text-6xl font-black tracking-tight">
               💥BOOM!
