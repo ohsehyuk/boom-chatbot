@@ -577,7 +577,10 @@ transition-all
                 />
 
                 <button
-  onClick={sendMessage}
+  onClick={() => {
+    console.log("클릭");
+    sendMessage();
+  }}
   className="bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
 >
   전송
