@@ -151,7 +151,8 @@ if (!messageToSend.trim()) return;
     <div className="min-h-screen bg-[#050816] flex items-center justify-center overflow-hidden">
 
       {/* 모바일 프레임 */}
-      <div className="w-[390px] h-[844px] bg-black rounded-[40px] border border-white/10 overflow-hidden relative shadow-2xl">
+      <div className="w-full max-w-[390px]
+h-screen md:h-[844px] bg-black rounded-[40px] border border-white/10 overflow-hidden relative shadow-2xl">
 
         {/* Glow */}
         <div className="absolute w-[300px] h-[300px] bg-orange-500/20 blur-[120px] rounded-full top-[-100px] left-[-100px]" />
@@ -577,8 +578,10 @@ transition-all
                 />
 
                 <button
-  onClick={sendMessage}
-  onTouchEnd={sendMessage}
+  onClick={() => {
+    alert("버튼눌림");
+    sendMessage();
+  }}
   className="relative z-50 bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
 >
   전송
