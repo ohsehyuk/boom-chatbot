@@ -577,11 +577,8 @@ transition-all
                 />
 
                 <button
-  onClick={() => {
-    alert("버튼눌림");
-    sendMessage();
-  }}
-  className="relative z-50 bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
+  onClick={sendMessage}
+  className="bg-gradient-to-r from-orange-500 to-pink-500 px-4 py-2 rounded-xl text-sm font-medium"
 >
   전송
 </button>
